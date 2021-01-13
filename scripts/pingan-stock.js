@@ -1,6 +1,6 @@
 /*
  * @Author: DomKing
- * @Github: https://github.com/DomKing
+ * @Github: https://github.com/DomKing/QX
  * @Date: 2021-01-12
  * 打开平安证券签到页获取CK
 
@@ -8,7 +8,7 @@
 
   quanx:
   [rewrite_local]
-  ^https\:\/\/m\.stock\.pingan\.com\/restapi\/servicecenter\/getSignInfo url script-request-header https://raw.githubusercontent.com/DomKing/QuantumultX/master/my/pingan-stock.cookie.js
+  ^https\:\/\/m\.stock\.pingan\.com\/restapi\/servicecenter\/getSignInfo url script-request-header https://raw.githubusercontent.com/DomKing/QX/main/scripts/pingan-stock.js
 
  *
  *

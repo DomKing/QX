@@ -1,6 +1,6 @@
 /*
  * @Author: DomKing
- * @Github: https://github.com/DomKing
+ * @Github: https://github.com/DomKing/QX
  * @Date: 2021-01-12
  * 打开平安证券签到页获取CK
 
@@ -8,7 +8,7 @@
 
   quanx:
   [rewrite_local]
-  ^https\:\/\/m\.stock\.pingan\.com\/restapi\/servicecenter\/getSignInfo url script-request-header https://raw.githubusercontent.com/DomKing/QuantumultX/master/my/pingan-stock.cookie.js
+  ^https\:\/\/m\.stock\.pingan\.com\/restapi\/servicecenter\/getSignInfo url script-request-header https://raw.githubusercontent.com/DomKing/QX/main/scripts/pingan-stock.cookie.js
 
  *
  *
@@ -29,12 +29,12 @@ if (url.indexOf(headerUrl) > -1) {
     }
     $.setdata(JSON.stringify(headers), headerKey);
     $.log(`平安证券获取到的信息为: ${JSON.stringify(headers)}`);
-    $.msg($.name,`平安证券获取Cookie成功 🎉`);
+    $.msg($.name, `平安证券获取Cookie成功 🎉`);
   } catch (err) {
     $.logErr(`平安证券获取Cookie失败，执行异常：${err}。`);
     $.msg($.name, "❌平安证券获取Cookie失败");
   } finally {
-      $.done();
+    $.done();
   }
 }
 
