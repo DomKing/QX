@@ -1,0 +1,4 @@
+[Script]
+
+[MITM]
+hostname = m.stock.pingan.com,api.staysorted.com
